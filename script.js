@@ -16,6 +16,7 @@ let userScore = 0;
 
 let comScore = 0;
 
+/* Function to check the score and reset the counter */
 function checkScore() {
     if(userScore == 5 || comScore == 5){
         if(userScore > comScore){
@@ -27,7 +28,7 @@ function checkScore() {
         }
     }
 };
-
+/* Function to add the score to the DOM by either adding it or removing and then adding it */
 function scoreFunc(){
     if(document.contains(document.getElementById("scoreData"))){
         document.getElementById("scoreData").remove();
@@ -97,7 +98,7 @@ function playerScissors() {
     }
     scoreFunc();
 }
-
+/* resets the score */
 function resetFunc() {
     userScore=0;
     comScore=0
